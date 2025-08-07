@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('tes', function (Blueprint $table) {
             $table->id();
+            $table->string('product_client')->nullable();
+            $table->string('name_client')->nullable();
+            $table->text('alamat')->nullable();
+            $table->string('pic')->nullable();
+            $table->string('email')->nullable();
+            $table->string('nomor_hp')->nullable();
             $table->timestamps();
         });
     }

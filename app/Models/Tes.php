@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Tes extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'product_client',
+        'name_client',
+        'alamat',
+        'pic',
+        'email',
+        'nomor_hp',
+    ];
 }
